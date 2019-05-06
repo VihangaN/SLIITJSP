@@ -1,0 +1,123 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+*{
+    font-family: roboto;
+}
+.main_container{
+    width:400px;
+    /* height:400px; */
+    background:#fff;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left:50%;
+    top:50%;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.login_form{
+    width:100%;
+    height:auto;
+    display:block;
+    padding:10% 0;
+    margin:0 auto;
+    
+}
+
+.Reg_form{
+    width:100%;
+    height:auto;
+    padding:10% 0;
+    margin:0 auto;
+    display:none;
+}
+
+
+input[type="text"],input[type="password"]{
+    
+  background: #f2f2f2;
+  width: 80%;
+  border: none;
+  outline: none;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+input[type="submit"]{
+   
+    display:block;
+    text-align:center;
+    position: relative;
+    margin:0px auto;
+    width:80%;
+    border:none;
+    outline:none;
+    height:45px;
+    text-align:center;
+    text-transform: uppercase;
+    color:#fff;
+    background: #0984e3;
+   
+}
+
+input[type="submit"]:hover{
+   
+   cursor:pointer;
+    background: #006cbe;
+   
+}
+.choose1,.choose2 ,a {
+    display:inline-block;
+    text-align:center;
+    font-size:13px;
+    margin-top:10px;
+    padding:4px;
+    color:#57606f;
+}
+
+.choose1 a , .choose2 a {
+    text-decoration: none;
+    color:#0984e3;
+    cursor:pointer;
+}
+
+.title{
+    display:inline-block;
+    text-align:center;
+    font-size:13px;
+    padding:4px;
+    margin-top:60px;
+    text-transform: uppercase;
+    font-size:20px;
+    color:#57606f;
+}
+
+span:nth-child(1)::before{
+   
+
+    display: inline-block;
+    content: '';
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    margin: 1px 12px;
+    background-color: #bdbdbd;
+
+   
+}
+
+
+
+label{
+    display:block;
+font-size:14px;
+margin:-14px auto 10px auto ;
+padding:0px 8px 0px 8px;
+background-color: #ff5252;
+color:#fff;
+width:76%;
+
+
+
+}
