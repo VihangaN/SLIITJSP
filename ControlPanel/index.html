@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Side nav</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="./index.css">
+     <script src="../js/main.js"></script>
+     <script src="../js/jquery.js"></script>
+    
+</head>
+<body>
+
+    <ul id="sidenav" class="sidenav">
+
+        <div class="li">
+        <li><div class="iconbefore"><i class="fa fa-user-plus"></i></div>Add patient</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </div>
+        <button id="mnubtn" class="mnubtn">
+               <div class="mnucontainer"><i class="fa fa-bars"></i></div> 
+        </button>
+    </ul>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="overlay2" id="overlay2"></div>
+    
+    <nav>
+        <span id="panel_name">Panel name </span>
+            <button id="logout">Log out</button>
+        <img src="../media/propiccc.jpg" alt="Profile picture" id="userpic">
+        
+        </nav>
+
+    <div class="content">
+        <div id="confirm">
+            <span id="logout_content"> Are you sure , you want to logout ?</span>
+            <div id="btns">
+                <span class="yes" id="logout_confirm">Yes</span>
+                <span class="no" id="logout_unconfirm">No</span>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere sed numquam eligendi. Quibusdam tempore culpa consectetur id doloremque ex tenetur ipsam, delectus harum velit deleniti sit quam mollitia modi quo ea facere repellat incidunt quis officiis officia autem? Amet rerum ducimus odit eum ipsam nulla autem libero tempora labore, quas iure, atque esse sed! Illum vero deleniti quam id distinctio, expedita fugit, omnis cumque fugiat repellat architecto quas, qui vitae laboriosam ullam explicabo maiores fuga! Dolores quia voluptatem aperiam quos? Cum corporis ea deleniti iure incidunt nobis beatae rerum consectetur nam, temporibus magnam aut quo magni commodi voluptatum labore odit illo laborum ratione esse aliquam eum? Hic cum, voluptates tempore dicta quisquam natus suscipit consequatur possimus itaque, laboriosam sed dolorem ad laudantium cupiditate numquam reiciendis esse! Nulla itaque rem tenetur provident labore repudiandae voluptate dolore reprehenderit repellat, error facere assumenda iste rerum id neque porro, esse in mollitia. Incidunt optio totam est, blanditiis illo culpa reprehenderit itaque exercitationem placeat vel sit sunt voluptatum, in pariatur debitis aperiam fuga voluptatem ducimus quo asperiores deleniti saepe repellat a laudantium. Tenetur incidunt quaerat, sapiente doloremque reprehenderit nam eius ipsa perferendis autem sed debitis eligendi reiciendis. Quia commodi error autem assumenda quaerat sint quod impedit vitae debitis, maxime incidunt odit facilis repudiandae, inventore similique tempora? Illum vero atque pariatur, delectus vitae ipsum facilis! Illum exercitationem at nesciunt magnam tempora non id quia commodi earum natus ducimus animi quae, temporibus hic dolore suscipit culpa modi aspernatur corporis quisquam ad enim quibusdam. Ut unde impedit repellat ullam eaque consequatur delectus beatae sunt, ea consequuntur atque repudiandae totam minima vel. Ex vero error suscipit et, quisquam molestias aut fugiat hic qui magni repellat, neque similique atque unde tempore necessitatibus maiores beatae perferendis? Eos nam consectetur magni ex. Quasi consequatur et dolorum perferendis explicabo aperiam magnam tempore recusandae?
+      </div>
+    
+
+
+<script>
+$("#mnubtn , li ,#overlay").click(function(){
+   
+    $("#sidenav").toggleClass("show","slow")
+    $('#mnubtn').find('i').toggleClass(' fa fa-bars fa fa-close');
+    $(".icon").toggleClass("open");
+    $("#overlay").fadeToggle();
+       
+ 
+});
+
+$("#logout").click(function(){
+    $("#overlay2").fadeIn();
+    $("#confirm").fadeIn();
+  
+})
+
+$("#logout_confirm").click(function(){
+    $("#overlay2").fadeOut();
+    $("#confirm").fadeOut();
+
+    // do log out functionality here 
+})
+
+$("#logout_unconfirm").click(function(){
+    $("#overlay2").fadeOut();
+    $("#confirm").fadeOut();
+})
+</script>    
+</body>
+</html>
