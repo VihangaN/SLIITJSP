@@ -16,10 +16,15 @@
     <ul id="sidenav" class="sidenav">
 
         <div class="li">
-        <li><div class="iconbefore"><i class="fa fa-user-plus"></i></div>Add patient</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
+        <li id="welcome" onclick="welcome_load();"><div class="iconbefore"><i class="fa fa-user-plus"></i></div>Welcome page</li>
+        <li id="admin" onclick="admin_load();">Admin home</li>
+        <li id="editprofile" onclick="profile_load();">Edit profile</li>
+        <li id="patients" onclick="patient_load();">Patients</li>
+        <li id="doctors" onclick="doctors_load();">Doctors</li>
+        <li id="staff" onclick="staff_load();">staff</li>
+        <li id="si1" onclick="item1_load();">items</li>
+        <li id="si2" onclick="item2_load();">items</li>
+        <li id="si3" onclick="item3_load();">items</li>
     </div>
         <button id="mnubtn" class="mnubtn">
                <div class="mnucontainer"><i class="fa fa-bars"></i></div> 
@@ -49,10 +54,12 @@
 
 
 
+    <div id="main">
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque doloremque adipisci omnis facilis quidem iure dignissimos quos consectetur quis qui dolore minus vitae perspiciatis, nam maxime voluptas. Quibusdam quam accusamus distinctio eaque tenetur quis veritatis atque maxime molestiae aliquam, rem, ex, quasi odit facere in. Quisquam quibusdam repellendus voluptas necessitatibus delectus deleniti hic. Natus, laboriosam. Assumenda maxime error modi? Temporibus maxime vero consequuntur, delectus blanditiis non debitis molestiae! Repellat eum voluptatum quae quibusdam consequatur ut labore sequi laboriosam voluptatem magni sint impedit itaque, maiores earum voluptates. Quisquam adipisci quas fuga expedita autem saepe unde nesciunt nobis nam! Expedita esse quibusdam necessitatibus nam dolorem, rerum natus amet veritatis! Molestiae esse sapiente obcaecati. Iure animi excepturi veritatis, magni perferendis deserunt earum omnis iste necessitatibus? Nihil id, quia ipsa eius sequi fuga iusto quibusdam dignissimos facilis minus voluptas ratione accusantium officia explicabo officiis obcaecati at deserunt, assumenda, vel saepe blanditiis! Dolorem, quas, asperiores dolore nostrum atque laboriosam ducimus, doloremque nemo quos praesentium aliquid. Vel dolor vero ad qui itaque odio, excepturi sed! Impedit facilis qui explicabo fuga, ut nostrum hic iure veniam perspiciatis minima deleniti mollitia, debitis provident dolorem error quam unde veritatis corrupti corporis quae magnam autem temporibus? Officiis dolorem nihil, vel nobis minima harum ut excepturi eos quae accusamus fuga tempora earum neque eveniet dicta hic deleniti assumenda. Laboriosam magni voluptatibus dolores sequi sapiente minima voluptatem accusamus, deserunt id quae dicta nihil quas odio earum. Accusantium eos necessitatibus facere quam, tenetur alias veniam consequuntur minus, saepe architecto dolores cumque. Cupiditate, obcaecati aspernatur est dolore tenetur nesciunt, voluptates vitae reiciendis numquam fuga beatae ex consequatur adipisci ullam nihil sint alias illo excepturi exercitationem recusandae voluptate necessitatibus eaque quibusdam molestias. Delectus, non accusamus. Reiciendis velit illum soluta. Rerum iusto quia earum sed vel veritatis debitis. Suscipit libero dolores exercitationem illo illum, veniam tempora?
+    </div>
 
 
-
-       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere sed numquam eligendi. Quibusdam tempore culpa consectetur id doloremque ex tenetur ipsam, delectus harum velit deleniti sit quam mollitia modi quo ea facere repellat incidunt quis officiis officia autem? Amet rerum ducimus odit eum ipsam nulla autem libero tempora labore, quas iure, atque esse sed! Illum vero deleniti quam id distinctio, expedita fugit, omnis cumque fugiat repellat architecto quas, qui vitae laboriosam ullam explicabo maiores fuga! Dolores quia voluptatem aperiam quos? Cum corporis ea deleniti iure incidunt nobis beatae rerum consectetur nam, temporibus magnam aut quo magni commodi voluptatum labore odit illo laborum ratione esse aliquam eum? Hic cum, voluptates tempore dicta quisquam natus suscipit consequatur possimus itaque, laboriosam sed dolorem ad laudantium cupiditate numquam reiciendis esse! Nulla itaque rem tenetur provident labore repudiandae voluptate dolore reprehenderit repellat, error facere assumenda iste rerum id neque porro, esse in mollitia. Incidunt optio totam est, blanditiis illo culpa reprehenderit itaque exercitationem placeat vel sit sunt voluptatum, in pariatur debitis aperiam fuga voluptatem ducimus quo asperiores deleniti saepe repellat a laudantium. Tenetur incidunt quaerat, sapiente doloremque reprehenderit nam eius ipsa perferendis autem sed debitis eligendi reiciendis. Quia commodi error autem assumenda quaerat sint quod impedit vitae debitis, maxime incidunt odit facilis repudiandae, inventore similique tempora? Illum vero atque pariatur, delectus vitae ipsum facilis! Illum exercitationem at nesciunt magnam tempora non id quia commodi earum natus ducimus animi quae, temporibus hic dolore suscipit culpa modi aspernatur corporis quisquam ad enim quibusdam. Ut unde impedit repellat ullam eaque consequatur delectus beatae sunt, ea consequuntur atque repudiandae totam minima vel. Ex vero error suscipit et, quisquam molestias aut fugiat hic qui magni repellat, neque similique atque unde tempore necessitatibus maiores beatae perferendis? Eos nam consectetur magni ex. Quasi consequatur et dolorum perferendis explicabo aperiam magnam tempore recusandae?
+      
       </div>
     
 
@@ -85,6 +92,48 @@ $("#logout_unconfirm").click(function(){
     $("#overlay2").fadeOut();
     $("#confirm").fadeOut();
 })
+
+
+//page load function
+
+function welcome_load(){
+    $('#main').load('test.html');
+}
+
+function admin_load(){
+alert("admin");
+}
+
+function patient_load(){
+    alert("patient");
+}
+
+function doctors_load(){
+    alert("doctors");
+}
+
+function profile_load(){
+    alert("profile");
+}
+
+function staff_load(){
+    alert("staff");
+}
+
+
+function item1_load(){
+    alert("item1");
+}
+
+
+function item2_load(){
+    alert("item2");
+}
+
+
+function item3_load(){
+    alert("item3");
+}
 </script>    
 </body>
 </html>
